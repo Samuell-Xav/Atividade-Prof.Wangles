@@ -28,7 +28,7 @@
 .navbar-links li a {
     text-decoration: none; /* Remove o sublinhado do link */
     color: #fff; /* Cor do texto branca */
-    font-family: Arial, sans-serif; /* Fonte legível */
+    font-family: formula1display-regular; /* Fonte */
     font-weight: bold;
     padding: 10px 15px; /* Adiciona padding para parecer um "botão" */
     transition: color 0.3s; /* Transição suave para o efeito hover */
@@ -348,4 +348,5 @@ strong {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
