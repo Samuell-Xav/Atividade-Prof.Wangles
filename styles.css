@@ -1,0 +1,351 @@
+
+
+/* Estilos para a Barra de Navegação */
+.navbar {
+    display: flex; /* Habilita o Flexbox */
+    justify-content: space-between; /* Distribui a logo e os links nas extremidades */
+    align-items: center; /* Centraliza verticalmente os itens */
+    background-color: #000; /* Cor de fundo preta */
+    padding: 5px 20px; /* Espaçamento interno (topo/base e laterais) */
+}
+
+/* Estilos para a Logo */
+.navbar-logo {
+    height: 60px; /* Ajuste a altura da logo */
+    width: auto;
+}
+
+/* Estilos para a Lista de Links */
+.navbar-links {
+    list-style: none; /* Remove os marcadores de lista (bolinhas) */
+    padding: 0;
+    margin: 0;
+    display: flex; /* Alinha os itens da lista lado a lado */
+    gap: 20px; /* Espaçamento entre os botões */
+}
+
+/* Estilos para os Links (Botões) */
+.navbar-links li a {
+    text-decoration: none; /* Remove o sublinhado do link */
+    color: #fff; /* Cor do texto branca */
+    font-family: Arial, sans-serif; /* Fonte legível */
+    font-weight: bold;
+    padding: 10px 15px; /* Adiciona padding para parecer um "botão" */
+    transition: color 0.3s; /* Transição suave para o efeito hover */
+}
+
+/* Efeito ao passar o mouse */
+.navbar-links li a:hover {
+    color: #0aad12; /* Cor de destaque (ex: vermelho F1) */
+}
+
+
+
+
+/* Estilo para centralizar o menu de categorias */
+.menu-categorias {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 15px;      /* Opcional: para dar um espaço acima */
+    margin-bottom: 15px;   /* Opcional: para dar um espaço abaixo */
+}
+
+
+
+
+
+
+
+
+
+
+.imagem-responsiva {
+    /* Define que a largura da imagem ocupará 100% da largura do seu contêiner (pai) */
+    
+
+    /* Garante que a altura da imagem se ajuste proporcionalmente
+       para manter a proporção original, evitando distorções. */
+   
+
+    /* Garante que a imagem preencha a área, cortando o que for necessário, mantendo a proporção de um lado */
+    object-fit: cover;
+    
+     max-width: 100%;
+     max-height: 100%;
+    
+    /* Nota: Se 'max-width: 100%' for usada, ela garantirá que a imagem 
+       não ultrapasse seu tamanho intrínseco, mas 'width: 100%' fará 
+       o trabalho primário de preenchimento. */
+    
+    display: block;
+}
+
+/* código alternativo 
+
+.imagem-responsiva {
+     Define o tamanho MÁXIMO que a imagem pode ter.
+      Ela nunca ficará maior que 1920px.
+      (Este é o seu "tamanho fixo" para telas grandes).
+    
+    max-width: 1920px; 
+
+     Garante que a imagem se ajuste a telas MENORES.
+      Em um celular (ex: 400px), a imagem terá 100% (400px),
+      e não os 1920px, que quebrariam o layout.
+    
+    width: 100%;
+
+     Mantém a proporção (altura automática) para não distorcer 
+    height: auto;
+    
+     Boa prática para remover espaços extras e garantir o alinhamento 
+    display: block; 
+}
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*centraliza o texto*/ 
+	 .texto-centralizado {
+	     text-align: center 
+	 }
+	
+/*centralizar imagens*/
+	 section {
+	     display: flex;
+		 justify-content: center;
+		 align-items: center;
+	 }
+	 
+     body {
+		 background-color: rgb(0, 0, 0);
+	 }
+	 
+	 form {
+         text-align: center; /* Centraliza qualquer conteúdo inline (como o input de botão) dentro do form */
+         margin-bottom: 20px; /* Opcional: Adiciona um espaço abaixo do botão */
+     }
+
+/*mudar uma foto de lugar na página*/
+     .imagem-lugar {
+		 float: right;
+		 margin-left: 15px;
+		 margin-bottom: 15px;
+	 }
+
+
+
+
+
+     /* Centralizar vídeos */
+.video-centralizado {
+    display: block;         /* Faz o vídeo se comportar como um bloco */
+    margin-left: auto;      /* Cria margem automática à esquerda */
+    margin-right: auto;     /* Cria margem automática à direita */
+    
+    max-width: 100%;        /* Garante que o vídeo não ultrapasse a tela */
+    height: auto;           /* Mantém a proporção correta do vídeo quando a largura diminuir */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Regra para limpar o float, garantindo que o hr e footer não subam */
+      hr {
+         clear: both; 
+	  }
+
+/* ESTILO PARA O MENU HORIZONTAL (FLEXBOX) */
+      .menu-horizontal {
+         list-style: none; /* Remove os marcadores de lista (os pontinhos) */
+         padding: 0; /* Remove o padding padrão do ul */
+         margin: 0; /* Remove a margem padrão do ul */
+         display: flex; /* Transforma o UL em um contêiner flexível */
+         justify-content: center; /* Centraliza os itens horizontalmente */
+         gap: 20px; /* Adiciona um espaço de 20px entre os itens (li) */
+     }
+
+/* Opcional: Estilo para os links, para que pareçam botões */
+       .menu-horizontal li a {
+         text-decoration: none; /* Remove o sublinhado */
+         color: #333; /* Cor do texto */
+         padding: 8px 15px; /* Espaçamento interno para parecer um botão */
+         border: 1px solid #ccc; /* Borda leve */
+         border-radius: 5px; /* Cantos arredondados */
+         transition: background-color 0.3s; /* Transição suave para o hover */
+     }
+
+       .menu-horizontal li a:hover {
+         background-color: #eee; /* Cor de fundo ao passar o mouse */
+     }
+
+/* Espaços entre textos */
+       h2 {
+         /* Define 30 pixels de espaço abaixo do H2 */
+         margin-bottom: 30px; 
+     }
+
+       p {
+         /* Define 15 pixels de espaço após cada parágrafo */
+         margin-bottom: 15px;
+     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Centralização do Botão --- */
+.container-botão {
+    /* Centraliza o conteúdo (o link/botão) horizontalmente */
+    text-align: center;
+    /* Adiciona um pouco de espaço acima e abaixo do container */
+    margin: 10px 0;
+}
+
+/* --- Estilo do Botão Principal (btn-principal) --- */
+.btn-principal {
+    /* Aparência Básica */
+    display: inline-block; /* Permite definir largura e altura, mas se comporta como texto */
+    padding: 5px 10px; /* Espaçamento interno: vertical (15px) e horizontal (30px) */
+    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    font-size: 1em; /* Tamanho da fonte */
+    font-weight: bold; /* Deixa a fonte mais grossa */
+    border-radius: 8px; /* Cantos levemente arredondados */
+    cursor: pointer; /* Transforma o mouse em um ponteiro ao passar por cima */
+
+    /* Cores e Estilo */
+    /* Mude a cor de fundo (background-color) e a cor do texto (color) aqui! */
+    background-color: #3fb122; /* Vermelho F1, a cor que você pode mudar! */
+    color: white; /* Cor do texto (mantenha claro se o fundo for escuro) */
+    border: 2px solid #3fb122; /* Borda da mesma cor do fundo */
+    transition: background-color 0.3s, transform 0.1s; /* Transição suave para o efeito hover */
+}
+
+/* --- Efeito ao Passar o Mouse (Hover) --- */
+.btn-principal:hover {
+    /* Escurece a cor de fundo */
+    background-color: #3fb122; 
+    /* Levanta a cor da borda, dando um efeito de profundidade */
+    border-color: #3fb122;
+    /* Opcional: Efeito de 'pressionar' */
+    transform: translateY(-2px); 
+    box-shadow: 0 4px 6px rgba(160, 160, 160, 0.2);
+}
+
+/* --- Efeito ao Clicar (Active) --- */
+.btn-principal:active {
+    /* Efeito de 'clicado' */
+    transform: translateY(0); 
+    box-shadow: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sintaxe para adicionar as fontes de F1 */
+@font-face {
+    font-family: 'formula1display-bold';
+    src: url('formula1-bold_web_0-webfont.woff2') format('woff2'),
+         url('formula1-bold_web_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'formula1display-regular';
+    src: url('formula1-regular_web_0-webfont.woff2') format('woff2'),
+         url('formula1-regular_web_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'formula1display-wide';
+    src: url('formula1-wide_web_0-webfont.woff2') format('woff2'),
+         url('formula1-wide_web_0-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Cor gradiente das fontes */
+h1 {
+  font-size: 40px;
+  background: -webkit-linear-gradient(#05e718, #d5e408);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+strong {
+  font-size: 11px;
+  background: -webkit-linear-gradient(#d5e408, #19cc02);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+

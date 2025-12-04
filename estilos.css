@@ -1,0 +1,68 @@
+/*centraliza o texto*/ 
+	 .texto-centralizado {
+	     text-align: center 
+	 }
+	
+/*centralizar imagens*/
+	 section {
+	     display: flex;
+		 justify-content: center;
+		 align-items: center;
+	 }
+	 
+     body {
+		 background-color: lightgray;
+	 }
+	 
+	 form {
+         text-align: center; /* Centraliza qualquer conteúdo inline (como o input de botão) dentro do form */
+         margin-bottom: 20px; /* Opcional: Adiciona um espaço abaixo do botão */
+     }
+
+/*mudar uma foto de lugar na página*/
+     .imagem-lugar {
+		 float: right;
+		 margin-left: 15px;
+		 margin-bottom: 15px;
+	 }
+
+/* Regra para limpar o float, garantindo que o hr e footer não subam */
+      hr {
+         clear: both; 
+	  }
+
+/* NOVO ESTILO PARA O MENU HORIZONTAL (FLEXBOX) */
+      .menu-horizontal {
+         list-style: none; /* Remove os marcadores de lista (os pontinhos) */
+         padding: 0; /* Remove o padding padrão do ul */
+         margin: 0; /* Remove a margem padrão do ul */
+         display: flex; /* Transforma o UL em um contêiner flexível */
+         justify-content: center; /* Centraliza os itens horizontalmente */
+         gap: 20px; /* Adiciona um espaço de 20px entre os itens (li) */
+     }
+
+/* Opcional: Estilo para os links, para que pareçam botões */
+       .menu-horizontal li a {
+         text-decoration: none; /* Remove o sublinhado */
+         color: #333; /* Cor do texto */
+         padding: 8px 15px; /* Espaçamento interno para parecer um botão */
+         border: 1px solid #ccc; /* Borda leve */
+         border-radius: 5px; /* Cantos arredondados */
+         transition: background-color 0.3s; /* Transição suave para o hover */
+     }
+
+       .menu-horizontal li a:hover {
+         background-color: #eee; /* Cor de fundo ao passar o mouse */
+     }
+
+/* Espaços entre textos */
+       h2 {
+         /* Define 30 pixels de espaço abaixo do H2 */
+         margin-bottom: 30px; 
+     }
+
+       p {
+         /* Define 15 pixels de espaço após cada parágrafo */
+         margin-bottom: 15px;
+     }
+	 
