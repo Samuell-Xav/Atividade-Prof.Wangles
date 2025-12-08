@@ -2,7 +2,7 @@
 
 /* Estilos para a Barra de Navegação */
 .navbar {
-    display: flex; /* Habilita o Flexbox */
+    display: flex; /* Habilita o Flexbox (permite organizar e alinhar elementos de forma flexível dentro de um contêiner) */
     justify-content: space-between; /* Distribui a logo e os links nas extremidades */
     align-items: center; /* Centraliza verticalmente os itens */
     background-color: #000; /* Cor de fundo preta */
@@ -348,5 +348,6 @@ strong {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
