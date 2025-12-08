@@ -3,40 +3,40 @@
 /* Estilos para a Barra de Navegação */
 .navbar {
     display: flex; /* Habilita o Flexbox (permite organizar e alinhar elementos de forma flexível dentro de um contêiner) */
-    justify-content: space-between; /* Distribui a logo e os links nas extremidades */
-    align-items: center; /* Centraliza verticalmente os itens */
-    background-color: #000; /* Cor de fundo preta */
-    padding: 5px 20px; /* Espaçamento interno (topo/base e laterais) */
+    justify-content: space-between; /* Distribui a logo e os botões nos cantos */
+    align-items: center; /* Centraliza os botões */
+    background-color: #000; /* Muda a cor de fundo */
+    padding: 5px 20px; /* Espaçamento interno (laterais, etc) */
 }
 
 /* Estilos para a Logo */
 .navbar-logo {
-    height: 60px; /* Ajuste a altura da logo */
+    height: 60px; /* Ajusta a altura da logo */
     width: auto;
 }
 
 /* Estilos para a Lista de Links */
 .navbar-links {
-    list-style: none; /* Remove os marcadores de lista (bolinhas) */
+    list-style: none; /* Remove os marcadores (bolinhas) */
     padding: 0;
     margin: 0;
-    display: flex; /* Alinha os itens da lista lado a lado */
+    display: flex; /* Alinha os botões lado a lado */
     gap: 20px; /* Espaçamento entre os botões */
 }
 
-/* Estilos para os Links (Botões) */
+/* Estilos para os botões */
 .navbar-links li a {
     text-decoration: none; /* Remove o sublinhado do link */
-    color: #fff; /* Cor do texto branca */
+    color: #fff; /* Muda a cor do texto dos botões */
     font-family: formula1display-regular; /* Fonte */
     font-weight: bold;
-    padding: 10px 15px; /* Adiciona padding para parecer um "botão" */
-    transition: color 0.3s; /* Transição suave para o efeito hover */
+    padding: 10px 15px; /* Adiciona padding para parecer um botão (no caso espaço em branco em volta deles) */
+    transition: color 0.3s; /* Transição suave quando passar o mouse (hover) */
 }
 
 /* Efeito ao passar o mouse */
 .navbar-links li a:hover {
-    color: #0aad12; /* Cor de destaque (ex: vermelho F1) */
+    color: #0aad12; /* Cor que aparece depois de passar o mouse */
 }
 
 
@@ -47,8 +47,8 @@
     display: flex;
     justify-content: center;
     width: 100%;
-    margin-top: 15px;      /* Opcional: para dar um espaço acima */
-    margin-bottom: 15px;   /* Opcional: para dar um espaço abaixo */
+    margin-top: 15px;      /* Mesma coisa do padding */
+    margin-bottom: 15px;   /* Mesma coisa do padding */
 }
 
 
@@ -61,48 +61,11 @@
 
 
 .imagem-responsiva {
-    /* Define que a largura da imagem ocupará 100% da largura do seu contêiner (pai) */
-    
-
-    /* Garante que a altura da imagem se ajuste proporcionalmente
-       para manter a proporção original, evitando distorções. */
-   
-
-    /* Garante que a imagem preencha a área, cortando o que for necessário, mantendo a proporção de um lado */
-    object-fit: cover;
-    
-     max-width: 100%;
-     max-height: 100%;
-    
-    /* Nota: Se 'max-width: 100%' for usada, ela garantirá que a imagem 
-       não ultrapasse seu tamanho intrínseco, mas 'width: 100%' fará 
-       o trabalho primário de preenchimento. */
-    
+    object-fit: cover; /* Deixa a imagem preencher o container onde ela está por inteiro */
+     max-width: 100%; /* Faz com que a imagem se adapte a qualquer tipo de tela */
+     max-height: 100%; /* Faz com que a imagem se adapte a qualquer tipo de tela */
     display: block;
 }
-
-/* código alternativo 
-
-.imagem-responsiva {
-     Define o tamanho MÁXIMO que a imagem pode ter.
-      Ela nunca ficará maior que 1920px.
-      (Este é o seu "tamanho fixo" para telas grandes).
-    
-    max-width: 1920px; 
-
-     Garante que a imagem se ajuste a telas MENORES.
-      Em um celular (ex: 400px), a imagem terá 100% (400px),
-      e não os 1920px, que quebrariam o layout.
-    
-    width: 100%;
-
-     Mantém a proporção (altura automática) para não distorcer 
-    height: auto;
-    
-     Boa prática para remover espaços extras e garantir o alinhamento 
-    display: block; 
-}
-*/
 
 
 
@@ -129,12 +92,12 @@
 	 }
 	 
      body {
-		 background-color: rgb(0, 0, 0);
+		 background-color: rgb(0, 0, 0); /* Muda a cor do fundo do body */
 	 }
 	 
 	 form {
-         text-align: center; /* Centraliza qualquer conteúdo inline (como o input de botão) dentro do form */
-         margin-bottom: 20px; /* Opcional: Adiciona um espaço abaixo do botão */
+         text-align: center; /* Centraliza qualquer conteúdo dentro do form */
+         margin-bottom: 20px; /* Adiciona um espaço abaixo */
      }
 
 /*mudar uma foto de lugar na página*/
@@ -176,29 +139,29 @@
 
 
 
-/* Regra para limpar o float, garantindo que o hr e footer não subam */
+/* Regra para limpar o float, garantindo que o hr e footer não subam (evitar que os textos fiquem ao redor do resto) */
       hr {
          clear: both; 
 	  }
 
-/* ESTILO PARA O MENU HORIZONTAL (FLEXBOX) */
+/* Estilos para o menu horizontal (FLEXBOX) */
       .menu-horizontal {
-         list-style: none; /* Remove os marcadores de lista (os pontinhos) */
-         padding: 0; /* Remove o padding padrão do ul */
-         margin: 0; /* Remove a margem padrão do ul */
-         display: flex; /* Transforma o UL em um contêiner flexível */
-         justify-content: center; /* Centraliza os itens horizontalmente */
-         gap: 20px; /* Adiciona um espaço de 20px entre os itens (li) */
+         list-style: none; /* Remove os marcadores (os pontinhos) */
+         padding: 0; /* Remove o padding */
+         margin: 0; /* Remove a margem */
+         display: flex; /* Transforma o UL em um conteiner */
+         justify-content: center; /* Centraliza os botões */
+         gap: 20px; /* Adiciona um espaço de 20px entre os botões (li) */
      }
 
-/* Opcional: Estilo para os links, para que pareçam botões */
+/* Estilo para os links, para que pareçam botões */
        .menu-horizontal li a {
          text-decoration: none; /* Remove o sublinhado */
          color: #333; /* Cor do texto */
-         padding: 8px 15px; /* Espaçamento interno para parecer um botão */
+         padding: 8px 15px; /* Espaçamento interno */
          border: 1px solid #ccc; /* Borda leve */
          border-radius: 5px; /* Cantos arredondados */
-         transition: background-color 0.3s; /* Transição suave para o hover */
+         transition: background-color 0.3s; /* Transição suave ao passar o mouse */
      }
 
        .menu-horizontal li a:hover {
@@ -228,48 +191,41 @@
 
 
 
-/* --- Centralização do Botão --- */
+/* Centralização do Botão */
 .container-botão {
-    /* Centraliza o conteúdo (o link/botão) horizontalmente */
-    text-align: center;
-    /* Adiciona um pouco de espaço acima e abaixo do container */
-    margin: 10px 0;
+    text-align: center; /* Centraliza os botões */
+    margin: 10px 0; /* Adiciona um pouco de espaço acima e abaixo do container */
 }
 
-/* --- Estilo do Botão Principal (btn-principal) --- */
+/* Estilo do Botão Principal */
 .btn-principal {
     /* Aparência Básica */
-    display: inline-block; /* Permite definir largura e altura, mas se comporta como texto */
+    display: inline-block; /* Permite definir largura e altura */
     padding: 5px 10px; /* Espaçamento interno: vertical (15px) e horizontal (30px) */
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
+    text-decoration: none; /* Remove o sublinhado */
     font-size: 1em; /* Tamanho da fonte */
     font-weight: bold; /* Deixa a fonte mais grossa */
     border-radius: 8px; /* Cantos levemente arredondados */
     cursor: pointer; /* Transforma o mouse em um ponteiro ao passar por cima */
 
     /* Cores e Estilo */
-    /* Mude a cor de fundo (background-color) e a cor do texto (color) aqui! */
-    background-color: #3fb122; /* Vermelho F1, a cor que você pode mudar! */
-    color: white; /* Cor do texto (mantenha claro se o fundo for escuro) */
+    background-color: #3fb122; /* Cor do fundo */
+    color: white; /* Cor do texto */
     border: 2px solid #3fb122; /* Borda da mesma cor do fundo */
-    transition: background-color 0.3s, transform 0.1s; /* Transição suave para o efeito hover */
+    transition: background-color 0.3s, transform 0.1s; /* Transição suave ao passar o mouse */
 }
 
-/* --- Efeito ao Passar o Mouse (Hover) --- */
+/* Efeito ao Passar o Mouse (Hover) */
 .btn-principal:hover {
-    /* Escurece a cor de fundo */
-    background-color: #3fb122; 
-    /* Levanta a cor da borda, dando um efeito de profundidade */
-    border-color: #3fb122;
-    /* Opcional: Efeito de 'pressionar' */
-    transform: translateY(-2px); 
+    background-color: #3fb122; /* Escurece a cor de fundo */ 
+    border-color: #3fb122; /* Levanta a cor da borda, dando um efeito de profundidade */
+    transform: translateY(-2px); /* Efeito de pressionar */
     box-shadow: 0 4px 6px rgba(160, 160, 160, 0.2);
 }
 
-/* --- Efeito ao Clicar (Active) --- */
+/* Efeito ao Clicar */
 .btn-principal:active {
-    /* Efeito de 'clicado' */
-    transform: translateY(0); 
+    transform: translateY(0); /* Efeito de 'clicado' */
     box-shadow: none;
 }
 
@@ -348,6 +304,7 @@ strong {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
