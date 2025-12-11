@@ -11,35 +11,35 @@
 
 						/* Estilos para a Logo */
 						.navbar-logo {
-    					height: 60px; /* Ajusta a altura da logo */
-    					width: auto;
+    						height: 60px; /* Ajusta a altura da logo */
+    						width: auto;
 						}
 
-/* Estilos para a Lista de Links */
-.navbar-links {
-    list-style: none; /* Remove os marcadores (bolinhas) */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Alinha os botões lado a lado */
-    gap: 20px; /* Espaçamento entre os botões */
-}
+						/* Estilos para a Lista de Links */
+						.navbar-links {
+    						list-style: none; /* Remove os marcadores (bolinhas) */
+    						padding: 0;
+    						margin: 0;
+    						display: flex; /* Alinha os botões lado a lado */
+    						gap: 20px; /* Espaçamento entre os botões */
+						}
 
-/* Estilos para os botões */
-.navbar-links li a {
-    text-decoration: none; /* Remove o sublinhado do link */
-    color: #fff; /* Muda a cor do texto dos botões */
-    font-family: formula1display-regular; /* Fonte */
-    font-weight: bold;
-    padding: 10px 15px; /* Adiciona padding para parecer um botão (no caso espaço em branco em volta deles) */
-    transition: color 0.3s; /* Transição suave quando passar o mouse (hover) */
-}
+						/* Estilos para os botões */
+						.navbar-links li a {
+    						text-decoration: none; /* Remove o sublinhado do link */
+    						color: #fff; /* Muda a cor do texto dos botões */
+    						font-family: formula1display-regular; /* Fonte */
+    						font-weight: bold;
+    						padding: 10px 15px; /* Adiciona padding para parecer um botão (no caso espaço em branco em volta deles) */
+    						transition: color 0.3s; /* Transição suave quando passar o mouse (hover) */
+						}
 
-/* Efeito ao passar o mouse */
-.navbar-links li a:hover {
-    color: #0aad12; /* Cor que aparece depois de passar o mouse */
-}
+						/* Efeito ao passar o mouse */
+						.navbar-links li a:hover {
+    						color: #0aad12; /* Cor que aparece depois de passar o mouse */
+						}
 
-
+/*.....................................................*/
 
 
 /* Estilo para centralizar o menu de categorias */
@@ -309,6 +309,7 @@ strong {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
