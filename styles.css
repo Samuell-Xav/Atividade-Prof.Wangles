@@ -1,19 +1,19 @@
+/* Barra de Navegação */
 
+ 						/* Estilos para a Barra de Navegação */
+						.navbar {
+    						display: flex; /* Habilita o Flexbox (permite organizar e alinhar elementos de forma flexível dentro de um contêiner) */
+    						justify-content: space-between; /* Distribui a logo e os botões nos cantos */
+    						align-items: center; /* Centraliza a barra */
+    						background-color: #000; /* Muda a cor de fundo */
+    						padding: 5px 20px; /* Espaçamento interno (laterais, etc) */
+						}
 
-/* Estilos para a Barra de Navegação */
-.navbar {
-    display: flex; /* Habilita o Flexbox (permite organizar e alinhar elementos de forma flexível dentro de um contêiner) */
-    justify-content: space-between; /* Distribui a logo e os botões nos cantos */
-    align-items: center; /* Centraliza a barra */
-    background-color: #000; /* Muda a cor de fundo */
-    padding: 5px 20px; /* Espaçamento interno (laterais, etc) */
-}
-
-/* Estilos para a Logo */
-.navbar-logo {
-    height: 60px; /* Ajusta a altura da logo */
-    width: auto;
-}
+						/* Estilos para a Logo */
+						.navbar-logo {
+    					height: 60px; /* Ajusta a altura da logo */
+    					width: auto;
+						}
 
 /* Estilos para a Lista de Links */
 .navbar-links {
@@ -309,6 +309,7 @@ strong {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
 
 
 
